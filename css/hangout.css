@@ -1,0 +1,89 @@
+a{
+    border-radius: 50% / 50%;
+    box-shadow: 0 0 2em #000
+}
+a:active{
+    transform: scale(.9);
+    box-shadow: 0 0 2em #FFF;
+}
+.daily {
+    background-image: url(/home/daniel/Documents/dev2/Hangout/img/daily.jpg);
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+a{
+        width: 130px;
+        height: 130px;
+        display: block;
+        text-indent: -99999px;
+        transform: scale(1.2);
+        list-style: none;
+}
+ul{
+    list-style-type: none;
+}
+.bruno{
+    background-image: url(/home/daniel/Documents/dev2/Hangout/img/arizona.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    top: 8em;
+    left: 3em;
+    position: absolute;
+}
+.claudio {
+    background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 20em;
+    left: 5em;
+}
+.denis {
+    background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 2em;
+    right: 70%;
+}
+.devops {
+    background-image: url(/home/daniel/Documents/dev2/Hangout/img/devops.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 32em;
+    left: 7em;
+}
+.felipe {
+    background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
+    position: absolute;
+    top: 32em;
+    left: 18em;
+}
+.gui {
+    background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+.mau {
+    background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
+    position: absolute;
+    top: 60%;
+    right: 40%;
+}
+.paola{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+.norio{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+}
+.qa{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
