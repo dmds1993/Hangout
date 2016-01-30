@@ -1,0 +1,801 @@
+.contact-form .select-box {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 1px;
+  height: 30px;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1); }
+  @media only screen and (max-width: 768px) {
+    .contact-form .select-box {
+      height: 31px;   }
+}
+    .contact-form .select-box.focus {
+      border-color: #aaccfe;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+      -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .contact-form .select-box:after, .contact-form .select-box:before {
+    content: "";
+    display: block;
+    pointer-events: none;
+    position: absolute; }
+    .contact-form .select-box:after {
+      border-style: solid;
+      border-width: 0.4em 0.35em 0;
+      border-color: #dcdcdc transparent transparent transparent;
+      content: '';
+      display: inline-block;
+      height: 0;
+      right: 0.7em;
+      text-align: center;
+      top: 50%;
+      width: 0; }
+      .contact-form .select-box:before {
+        background-color: #fff;
+        border-left: 1px solid #dcdcdc;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        width: 2em; }
+        .contact-form .select-box.invalid {
+          border-color: #FA787E; }
+          .contact-form .select-box select {
+            border: 0;
+            background-color: transparent;
+            color: #666;
+            height: 100%;
+            font-family: 'Open Sans';
+            font-size: 12px;
+            padding-left: 5px;
+            padding-right: 2.5em;
+            width: 100%;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
+            appearance: none; }
+            .contact-form .select-box select:focus {
+              outline: 0; }
+              .contact-form .select-box select[disabled] {
+                color: rgba(0, 0, 0, 0.3); }
+
+@-moz-document url-prefix() {
+  .contact-form .select-box select {
+    padding-right: 0;   }
+}
+
+.i18n_phone_number_input {
+  margin: 0;
+  color: #333;
+  text-decoration: none;
+  list-style: none;
+  vertical-align: top;
+  outline: none;
+  background-color: #fff;
+  height: 26px;
+  border-collapse: collapse;
+  padding: 0; }
+
+  .i18n_phone_number_input-input {
+    border: 1px solid #c9c9c9;
+    border-left-width: 0;
+    vertical-align: middle;
+    height: 26px; }
+
+    .i18n_phone_number_input-inner_input {
+      border-width: 0;
+      margin: 0 0 0 0;
+      padding-top: 4px;
+      width: 140px;
+      height: 21px;
+      outline: none; }
+
+      .i18n_phone_number_input-menu {
+        border: 1px solid #c9c9c9;
+        border-right-width: 0;
+        height: 26px;
+        padding: 0;
+        outline: none; }
+
+        .i18n-phone-select-country {
+          cursor: pointer;
+          height: 21px;
+          outline: none;
+          padding-left: 5px;
+          vertical-align: middle;
+          *height: 25px;
+          *padding-top: 3px; }
+
+          .i18n-phone-select-country-caption {
+            vertical-align: middle; }
+
+            .i18n-phone-select-country-dropdown {
+              vertical-align: middle; }
+
+              .i18n_phone_number_input-loRes .i18n-phone-select-country-dropdown {
+                background: url(concat\(concat\(\'//ssl.gstatic.com\',
+                                \'/i18n/phonenumbers/phoneinputwidget/\'\),
+                                \'phone-input-arrow.png\'\)) no-repeat center center;
+                width: 14px; }
+
+                .i18n_phone_number_input-hiRes .i18n-phone-select-country-dropdown {
+                  background: url(concat\(concat\(\'//ssl.gstatic.com\',
+                                    \'/i18n/phonenumbers/phoneinputwidget/\'\),
+                                    \'phone-input-arrow-10x6.png\'\)) no-repeat center center;
+                  background-size: 5px 3px;
+                  width: 14px; }
+
+                  .i18n-phone-select-country-hover {
+                    background-color: #e0ecff; }
+
+                    .i18n-phone-select-country-disabled {
+                      cursor: default;
+                      opacity: 0.5; }
+
+                      div.i18n-phone-select-country-menu {
+                        height: 208px;
+                        overflow-y: auto;
+                        overflow-x: hidden; }
+
+                        .i18n-phone-select-country-menu .goog-menuitem {
+                          white-space: nowrap; }
+
+                          div.i18n-phone-select-country-flag {
+                            vertical-align: middle;
+                            padding: 2px 0 2px 0; }
+
+                            span.i18n-phone-select-country-name {
+                              margin: 0 5px 0 7px;
+                              vertical-align: middle; }
+
+                              span.i18n-phone-select-country-code {
+                                color: #666;
+                                vertical-align: middle; }
+
+                                .i18n-phone-flag {
+                                  background: url(concat\(concat\(\'//ssl.gstatic.com\',
+                                                                    \'/i18n/phonenumbers/phoneinputwidget/\'\), \'flags4.png\'\)) no-repeat 0 0;
+                                  width: 16px;
+                                  height: 11px;
+                                  overflow: hidden; }
+
+                                  .i18n-phone-flag-32x22 {
+                                    background: url(concat\(concat\(\'//ssl.gstatic.com\',
+                                                                        \'/i18n/phonenumbers/phoneinputwidget/\'\), \'flags32x22_1z.png\'\)) no-repeat 0 0;
+                                    background-size: 17px 2724px;
+                                    width: 16px;
+                                    height: 11px;
+                                    overflow: hidden; }
+
+                                    .i18n_phone_number_input-inline {
+                                      margin: 0;
+                                      outline: none;
+                                      overflow: hidden;
+                                      padding: 0;
+                                      position: relative; }
+
+                                      .i18n_phone_number_input-inline_input {
+                                        padding-left 0.218spadding-left: 35px; }
+
+                                        .i18n_phone_number_input-empty .i18n_phone_number_input-inline_input {
+                                          nonepadding-left: inherit; }
+
+                                          .i18n_phone_number_input-inline_menu {
+                                            opacity 0.218sleft: 0;
+                                            margin: 2px;
+                                            opacity: 1;
+                                            outline: none;
+                                            padding: 0;
+                                            position: absolute;
+                                            top: -4px; }
+
+                                            .i18n_phone_number_input-empty .i18n_phone_number_input-inline_menu {
+                                              opacity: 0;
+                                              visibility: hidden; }
+
+                                              .goog-menu {
+                                                background: #fff;
+                                                border-color: #ccc #666 #666 #ccc;
+                                                border-style: solid;
+                                                border-width: 1px;
+                                                cursor: default;
+                                                font: normal 13px Arial, sans-serif;
+                                                margin: 0;
+                                                outline: none;
+                                                padding: 4px 0;
+                                                position: absolute;
+                                                z-index: 20000; }
+
+                                                .goog-menuitem {
+                                                  color: #000;
+                                                  font: normal 13px Arial, sans-serif;
+                                                  list-style: none;
+                                                  margin: 0;
+                                                  padding: 4px 7em 4px 28px;
+                                                  white-space: nowrap; }
+
+                                                  .goog-menuitem.goog-menuitem-rtl {
+                                                    padding-left: 7em;
+                                                    padding-right: 28px; }
+
+                                                    .goog-menu-nocheckbox .goog-menuitem, .goog-menu-noicon .goog-menuitem {
+                                                      padding-left: 12px; }
+
+                                                      .goog-menu-noaccel .goog-menuitem {
+                                                        padding-right: 20px; }
+
+                                                        .goog-menuitem-content {
+                                                          color: #000;
+                                                          font: normal 13px Arial, sans-serif; }
+
+                                                          .goog-menuitem-disabled .goog-menuitem-accel,
+                                                          .goog-menuitem-disabled .goog-menuitem-content {
+                                                            color: #ccc !important; }
+
+                                                            .goog-menuitem-disabled .goog-menuitem-icon {
+                                                              opacity: 0.3;
+                                                              -moz-opacity: 0.3;
+                                                              filter: alpha(opacity=30); }
+
+                                                              .goog-menuitem-highlight, .goog-menuitem-hover {
+                                                                background-color: #d6e9f8;
+                                                                border-color: #d6e9f8;
+                                                                border-style: dotted;
+                                                                border-width: 1px 0;
+                                                                padding-bottom: 3px;
+                                                                padding-top: 3px; }
+
+                                                                .goog-menuitem-checkbox, .goog-menuitem-icon {
+                                                                  background-repeat: no-repeat;
+                                                                  height: 16px;
+                                                                  left: 6px;
+                                                                  position: absolute;
+                                                                  right: auto;
+                                                                  vertical-align: middle;
+                                                                  width: 16px; }
+
+                                                                  .goog-menuitem-rtl .goog-menuitem-checkbox, .goog-menuitem-rtl .goog-menuitem-icon {
+                                                                    left: auto;
+                                                                    right: 6px; }
+
+                                                                    .goog-option-selected .goog-menuitem-checkbox,
+                                                                    .goog-option-selected .goog-menuitem-icon {
+                                                                      background: url(//ssl.gstatic.com/editor/editortoolbar.png) no-repeat -512px 0; }
+
+                                                                      .goog-menuitem-accel {
+                                                                        color: #999;
+                                                                        direction: ltr;
+                                                                        left: auto;
+                                                                        padding: 0 6px;
+                                                                        position: absolute;
+                                                                        right: 0;
+                                                                        text-align: right; }
+
+                                                                        .goog-menuitem-rtl .goog-menuitem-accel {
+                                                                          left: 0;
+                                                                          right: auto;
+                                                                          text-align: left; }
+
+                                                                          .goog-menuitem-mnemonic-hint {
+                                                                            text-decoration: underline; }
+
+                                                                            .goog-menuitem-mnemonic-separator {
+                                                                              color: #999;
+                                                                              font-size: 12px;
+                                                                              padding-left: 4px; }
+
+                                                                              .goog-inline-block {
+                                                                                position: relative;
+                                                                                display: -moz-inline-box;
+                                                                                display: inline-block; }
+
+                                                                                * html .goog-inline-block {
+                                                                                  display: inline; }
+
+                                                                                  *:first-child + html .goog-inline-block {
+                                                                                    display: inline; }
+
+                                                                                    table.i18n_phone_number_input {
+                                                                                      width: 100%; }
+                                                                                      table.i18n_phone_number_input .i18n_phone_number_input-menu {
+                                                                                        border: 0;
+                                                                                        width: 1%;
+                                                                                        vertical-align: middle;
+                                                                                        background-color: transparent; }
+                                                                                        table.i18n_phone_number_input .i18n-phone-select-country {
+                                                                                          padding-top: 4px;
+                                                                                          padding-bottom: 4px;
+                                                                                          height: 100%;
+                                                                                          width: 37px;
+                                                                                          height: 30px;
+                                                                                          border-top: 1px solid #dcdcdc;
+                                                                                          border-right: 0;
+                                                                                          border-bottom: 1px solid #dcdcdc;
+                                                                                          border-left: 1px solid #dcdcdc;
+                                                                                          -webkit-box-sizing: border-box;
+                                                                                          -moz-box-sizing: border-box;
+                                                                                          -ms-box-sizing: border-box;
+                                                                                          -o-box-sizing: border-box;
+                                                                                          box-sizing: border-box;
+                                                                                          -webkit-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                          -moz-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                          -ms-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                          -o-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                          transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1); }
+                                                                                          @media only screen and (max-width: 768px) {
+                                                                                            table.i18n_phone_number_input .i18n-phone-select-country {
+                                                                                              height: 31px;   }
+}
+                                                                                            [dir=rtl] table.i18n_phone_number_input .i18n-phone-select-country {
+                                                                                              border-top: 1px solid #dcdcdc;
+                                                                                              border-left: 0;
+                                                                                              border-bottom: 1px solid #dcdcdc;
+                                                                                              border-right: 1px solid #dcdcdc;
+                                                                                              padding-left: 0;
+                                                                                              padding-right: 5px; }
+                                                                                              table.i18n_phone_number_input .i18n-phone-select-country:focus,
+                                                                                              table.i18n_phone_number_input .i18n-phone-select-country:hover {
+                                                                                                background-color: #dceaff; }
+                                                                                      table.i18n_phone_number_input .i18n_phone_number_input-input {
+                                                                                        border: 0; }
+                                                                                        table.i18n_phone_number_input .i18n_phone_number_input-input input[type=tel],
+                                                                                        table.i18n_phone_number_input .i18n_phone_number_input-input input[type=text] {
+                                                                                          border: 1px solid #dcdcdc;
+                                                                                          height: 30px;
+                                                                                          padding-left: 10px;
+                                                                                          width: 100%;
+                                                                                          -webkit-box-sizing: border-box;
+                                                                                          -moz-box-sizing: border-box;
+                                                                                          -ms-box-sizing: border-box;
+                                                                                          -o-box-sizing: border-box;
+                                                                                          box-sizing: border-box;
+                                                                                          -webkit-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                          -moz-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                          -ms-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                          -o-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                          transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1); }
+                                                                                          @media only screen and (max-width: 768px) {
+                                                                                            table.i18n_phone_number_input .i18n_phone_number_input-input input[type=tel],
+                                                                                            table.i18n_phone_number_input .i18n_phone_number_input-input input[type=text] {
+                                                                                              height: 31px;   }
+}
+                                                                                            table.i18n_phone_number_input .i18n_phone_number_input-input input[type=tel]:lang(ar),
+                                                                                            table.i18n_phone_number_input .i18n_phone_number_input-input input[type=text]:lang(ar) {
+                                                                                              direction: ltr; }
+                                                                                              table.i18n_phone_number_input .i18n_phone_number_input-input input[type=tel].ng-invalid.validatable,
+                                                                                              table.i18n_phone_number_input .i18n_phone_number_input-input input[type=text].ng-invalid.validatable {
+                                                                                                border-color: #FA787E; }
+
+.i18n-phone-select-country-menu {
+  border: 1px solid #dcdcdc;
+  font-family: 'Open Sans';
+  -webkit-transform: translateX(-1px);
+  -moz-transform: translateX(-1px);
+  -ms-transform: translateX(-1px);
+  -o-transform: translateX(-1px);
+  transform: translateX(-1px);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
+  .i18n-phone-select-country-menu .goog-menuitem {
+    padding: 8px; }
+    .i18n-phone-select-country-menu .goog-menuitem-content {
+      font-family: 'Open Sans'; }
+      .i18n-phone-select-country-menu .goog-menuitem-highlight,
+      .i18n-phone-select-country-menu .goog-menuitem-hover {
+        border: 0;
+        background-color: #dceaff; }
+
+.i18n-phone-flag {
+  background: url(//ssl.gstatic.com/i18n/phonenumbers/phoneinputwidget/flags4.png) no-repeat 0 0; }
+
+  .i18n_phone_number_input-loRes .i18n-phone-select-country-dropdown {
+    background: url(//ssl.gstatic.com/i18n/phonenumbers/phoneinputwidget/phone-input-arrow.png) no-repeat center center; }
+
+    .contact-form {
+      font-family: 'Open Sans'; }
+      .contact-form p {
+        color: #666; }
+        .contact-form *, .contact-form *:before, .contact-form *:after {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box; }
+          .contact-form .hidden {
+            display: none; }
+            .contact-form form {
+              padding-bottom: 40px; }
+              .contact-form form:after {
+                content: '';
+                display: table;
+                clear: both; }
+      .contact-form .row {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box; }
+        .contact-form .row:after {
+          content: '';
+          display: table;
+          clear: both; }
+      .contact-form .field {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        float: left;
+        width: 50%;
+        position: relative;
+        min-height: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        min-height: 92px; }
+        [dir=rtl] .contact-form .field {
+          float: right; }
+          @media only screen and (max-width: 540px) {
+            .contact-form .field {
+              float: left;
+              width: 100%;
+              position: relative;
+              min-height: 1px;
+              padding-left: 10px;
+              padding-right: 10px;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              -ms-box-sizing: border-box;
+              -o-box-sizing: border-box;
+              box-sizing: border-box;   }
+              [dir=rtl] .contact-form .field {
+                float: right;   }
+}
+        .contact-form .field.full {
+          margin: 0;
+          float: left;
+          width: 100%;
+          position: relative;
+          min-height: 1px;
+          padding-left: 10px;
+          padding-right: 10px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box;
+          min-height: 1px; }
+          [dir=rtl] .contact-form .field.full {
+            float: right; }
+        .contact-form .field.collapse {
+          padding: 0; }
+          .contact-form .field.buttons .maia-button {
+            margin-right: 15px; }
+            [dir=rtl] .contact-form .field.buttons .maia-button {
+              margin-left: 15px;
+              margin-right: auto; }
+        .contact-form .field .errors .error {
+          font-size: 10px;
+          color: red;
+          font-style: italic; }
+      .contact-form label {
+        font-weight: 400;
+        font-size: 12px;
+        white-space: nowrap; }
+        .contact-form .optional-label {
+          float: right;
+          color: darkgray; }
+          [dir=rtl] .contact-form .optional-label {
+            float: left; }
+      .contact-form textarea, .contact-form input[type=text],
+      .contact-form input[type=url], .contact-form input[type=email],
+      .contact-form input[type=number], .contact-form input[type=tel] {
+        border: 1px solid #dcdcdc;
+        border-radius: 1px;
+        font-family: 'Open Sans';
+        margin-bottom: 0;
+        padding: 5px 7px 5px 5px;
+        height: 30px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+        -moz-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+        -ms-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+        -o-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        -webkit-tap-highlight-color: transparent;
+        -moz-tap-highlight-color: transparent;
+        -ms-tap-highlight-color: transparent;
+        -o-tap-highlight-color: transparent;
+        tap-highlight-color: transparent; }
+        .contact-form textarea:focus, .contact-form input[type=text]:focus,
+        .contact-form input[type=url]:focus, .contact-form input[type=email]:focus,
+        .contact-form input[type=number]:focus, .contact-form input[type=tel]:focus {
+          outline: 0;
+          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+          -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+          -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1); }
+      .contact-form textarea {
+        max-height: 100px;
+        max-width: 100%;
+        height: 100px; }
+        .contact-form textarea.ng-invalid.validatable,
+        .contact-form input[type=text].ng-invalid.validatable,
+        .contact-form input[type=url].ng-invalid.validatable,
+        .contact-form input[type=email].ng-invalid.validatable,
+        .contact-form input[type=number].ng-invalid.validatable,
+        .contact-form input[type=tel].ng-invalid.validatable {
+          border-color: #FA787E; }
+      @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width:768px) {
+        .contact-form select, .contact-form select:focus, .contact-form textarea,
+        .contact-form textarea:focus, .contact-form input, .contact-form input:focus {
+          font-size: 16px !important;   }
+}
+      .contact-form .sub-title {
+        background-color: #f0f0f0;
+        padding-top: 15px;
+        padding-bottom: 15px; }
+        .contact-form .sub-title:after {
+          content: '';
+          display: table;
+          clear: both; }
+          .contact-form .sub-title p {
+            font-size: 12px;
+            margin: 0;
+            color: #666;
+            padding-top: 0;
+            padding-bottom: 0;
+            float: left;
+            width: 100%;
+            position: relative;
+            min-height: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box; }
+            [dir=rtl] .contact-form .sub-title p {
+              float: right; }
+      .backgroundsize .contact-form .contact-support:after {
+        background-image: url(../images/contact-support-icon.png);
+        background-size: 100% 100%;
+        content: '';
+        display: inline-block;
+        height: 13px;
+        line-height: 1em;
+        margin-left: 7px;
+        vertical-align: middle;
+        width: 13px; }
+        [dir=rtl] .contact-form .contact-support:after {
+          margin-left: 0;
+          margin-right: 7px; }
+      .contact-form .call-sales {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f0f0f0;
+        margin-bottom: 10px; }
+        .contact-form .call-sales:after {
+          content: '';
+          display: table;
+          clear: both; }
+          .contact-form .call-sales h2, .contact-form .call-sales .phone-number {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.2em;
+            margin-top: 5px; }
+            .contact-form .call-sales h2 {
+              float: left;
+              width: 30%; }
+              [dir=rtl] .contact-form .call-sales h2 {
+                float: right; }
+                @media only screen and (max-width: 540px) {
+                  .contact-form .call-sales h2 {
+                    width: 100%;   }
+}
+        .contact-form .call-sales .phone-number {
+          pointer-events: none; }
+          @media only screen and (max-width: 768px) {
+            .contact-form .call-sales .phone-number {
+              pointer-events: auto;   }
+}
+            .backgroundsize .contact-form .call-sales .phone-number:before {
+              background-image: url(../images/phone-icon.png);
+              background-size: 100% 100%;
+              content: '';
+              display: inline-block;
+              height: 12.5px;
+              line-height: 1em;
+              margin-right: 7px;
+              margin-left: 7px;
+              margin-top: -3px;
+              vertical-align: middle;
+              width: 12.5px; }
+        .contact-form .call-sales .info {
+          width: 70%;
+          text-align: right;
+          float: right;
+          position: relative; }
+          [dir=rtl] .contact-form .call-sales .info {
+            float: left;
+            text-align: left; }
+            @media only screen and (max-width: 540px) {
+              .contact-form .call-sales .info.multiple, .contact-form .call-sales .info {
+                text-align: left;
+                width: 100%;
+                clear: both;
+                padding-top: 10px;   }
+                [dir=rtl] .contact-form .call-sales .info.multiple,
+                [dir=rtl] .contact-form .call-sales .info {
+                  text-align: right;   }
+}
+        .contact-form .call-sales .phone-number {
+          color: #458ffd; }
+          .contact-form .call-sales .hours-available {
+            color: #999;
+            font-size: 13px; }
+      .contact-form .chat-button-container {
+        border-left: 1px solid #f0f0f0;
+        float: right;
+        margin-left: 15px;
+        padding-left: 15px; }
+        .contact-form .chat-button {
+          padding-left: 22px;
+          padding-right: 22px; }
+          .contact-form .form-header {
+            padding: 10px 0; }
+            .contact-form .form-header h2 {
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 1em; }
+      .contact-form .interests {
+        padding-bottom: 10px; }
+        .contact-form .interests:after {
+          content: '';
+          display: table;
+          clear: both; }
+          .contact-form .interests li {
+            margin-bottom: 0; }
+            .contact-form .interests li input[type=checkbox], .contact-form .interests li label {
+              display: inline-block;
+              vertical-align: middle; }
+              .contact-form .interests li input[type=checkbox] {
+                margin-right: 5px; }
+        .contact-form .interests .field {
+          padding-top: 0;
+          padding-bottom: 0; }
+      .contact-form .email-options {
+        font-size: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        float: left;
+        width: 83.33333%;
+        position: relative;
+        min-height: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box; }
+        [dir=rtl] .contact-form .email-options {
+          float: right; }
+          @media only screen and (max-width: 540px) {
+            .contact-form .email-options {
+              float: left;
+              width: 100%;
+              position: relative;
+              min-height: 1px;
+              padding-left: 10px;
+              padding-right: 10px;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              -ms-box-sizing: border-box;
+              -o-box-sizing: border-box;
+              box-sizing: border-box;   }
+              [dir=rtl] .contact-form .email-options {
+                float: right;   }
+}
+        .contact-form .email-options input, .contact-form .email-options label {
+          display: inline-block;
+          vertical-align: middle; }
+          .contact-form .email-options label {
+            padding-left: 5px;
+            padding-right: 15px; }
+            [dir=rtl] .contact-form .email-options label {
+              padding-left: 15px;
+              padding-right: 5px; }
+      @media only screen and (max-width: 768px) {
+        .contact-form .additional-info {
+          display: none;   }
+}
+      .contact-form .phone-numbers-dropdown {
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        -o-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        display: block;
+        font-size: 13px;
+        position: absolute;
+        right: 0;
+        z-index: 200;
+        cursor: pointer;
+        overflow: hidden;
+        -webkit-transition: all 100ms;
+        -moz-transition: all 100ms;
+        -ms-transition: all 100ms;
+        -o-transition: all 100ms;
+        transition: all 100ms; }
+        [dir=rtl] .contact-form .phone-numbers-dropdown {
+          left: 0;
+          right: auto; }
+          .contact-form .phone-numbers-dropdown > div {
+            -webkit-transition: all 100ms;
+            -moz-transition: all 100ms;
+            -ms-transition: all 100ms;
+            -o-transition: all 100ms;
+            transition: all 100ms;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            color: #8a8a8a; }
+            .contact-form .phone-numbers-dropdown > div:hover {
+              background-color: #e3e3e3;
+              color: #242424; }
+              .contact-form .phone-numbers-dropdown > div.selected:hover,
+              .contact-form .phone-numbers-dropdown > div.selected {
+                color: #458ffd; }
+        .contact-form .phone-numbers-dropdown.ng-hide.ng-hide-remove,
+        .contact-form .phone-numbers-dropdown.ng-hide.ng-hide-add {
+          display: block !important; }
+        .contact-form .phone-numbers-dropdown.ng-hide-add {
+          opacity: 1; }
+          .contact-form .phone-numbers-dropdown.ng-hide-add.ng-hide-add-active {
+            opacity: 0; }
+        .contact-form .phone-numbers-dropdown.ng-hide-remove {
+          opacity: 0; }
+          .contact-form .phone-numbers-dropdown.ng-hide-remove.ng-hide-remove-active {
+            opacity: 1; }
+      .contact-form .selected-country {
+        cursor: pointer;
+        color: #458ffd;
+        display: inline-block;
+        font-size: 13px;
+        padding-bottom: 5px;
+        position: relative; }
+        .contact-form .selected-country:after {
+          content: '⌵';
+          font-size: 20px;
+          display: inline-block;
+          margin-left: 5px;
+          margin-right: 5px; }

@@ -1,4 +1,4 @@
-a{
+/*a{
     border-radius: 50% / 50%;
     box-shadow: 0 0 2em #000
 }
@@ -36,16 +36,16 @@ ul{
     background-repeat: no-repeat;
     display: inline-block;
     position: absolute;
-    top: 20em;
-    left: 5em;
+    top: 8em;
+    left: 16em;
 }
 .denis {
     background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
     background-repeat: no-repeat;
     display: inline-block;
     position: absolute;
-    top: 2em;
-    right: 70%;
+    top: 8em;
+    right: 20em;
 }
 .devops {
     background-image: url(/home/daniel/Documents/dev2/Hangout/img/devops.png);
@@ -57,33 +57,48 @@ ul{
 .felipe {
     background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
     position: absolute;
-    top: 32em;
-    left: 18em;
+    top: 20em;
+    left: 3m;
 }
 .gui {
     background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
     position: absolute;
-    top: 60%;
-    left: 40%;
+    top: 20em;
+    left: 16em;
 }
 .mau {
     background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
     position: absolute;
-    top: 60%;
-    right: 40%;
+    top: 20em;
+    left: 28em;
 }
 .paola{
     position: absolute;
-    top: 70%;
-    left: 40%;
+    top: 20em;
+    left: 42em;
 }
 .norio{
     position: absolute;
-    top: 90%;
+    top: 90%;a
     left: 40%;
 }
 .qa{
     position: absolute;
     top: 20%;
     left: 40%;
+}*/
+li {
+    list-style-type: none;
+}
+li {
+    float: left;
+    width: 30ch;
+    height: 30ch;
+    margin-top: 1em;
+    border: 2px solid black;
+    margin-right: 1em;
+}
+li img{
+    float: left;
+    margin-right: 1em;
 }
