@@ -86,11 +86,7 @@ ul{
     position: absolute;
     top: 20%;
     left: 40%;
-}*/
-body{
-    width: 80%;
-    margin: auto;
-}
+}*//
 li {
     list-style-type: none;
 }
