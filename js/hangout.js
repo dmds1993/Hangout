@@ -1,16 +1,4 @@
-// window.onload = function() {
-//
-//     var desenvolvimento = document.getElementById('desenvolvimento');
-//     var coordenador = document.getElementsByClassName('coordenador-de-equipe');
-//     var devops = document.getElementsByClassName('devops');
-//     var qualidade = document.getElementsByClassName('equipe-qualidade');
-//
-//     desenvolvimento.onclick = function (event){
-//         event.preventDefault();
-//         var outros =  document.getElementsByClassName('outros');
-//         outros.setAttribute('hide');
-//     }
-// }
+
 $( document ).ready(function() {
     $('#desenvolvimento').click(function (){
         event.preventDefault();

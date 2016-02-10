@@ -23,7 +23,10 @@ li {
     margin-top: 4px;
     margin-left: 1em;
 }
-a .hangout-button:active{
-    width: 30px;
-    height: 20px;
+.hangout img:active{
+     transform: scale(0.5);
+}
+.avatar{
+     max-width: 200px;
+     max-height: 150px
 }
