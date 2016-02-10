@@ -1,95 +1,3 @@
-/*a{
-    border-radius: 50% / 50%;
-    box-shadow: 0 0 2em #000
-}
-a:active{
-    transform: scale(.9);
-    box-shadow: 0 0 2em #FFF;
-}
-.daily {
-    background-image: url(/home/daniel/Documents/dev2/Hangout/img/daily.jpg);
-    position: absolute;
-    top: 20%;
-    left: 40%;
-}
-a{
-        width: 130px;
-        height: 130px;
-        display: block;
-        text-indent: -99999px;
-        transform: scale(1.2);
-        list-style: none;
-}
-ul{
-    list-style-type: none;
-}
-.bruno{
-    background-image: url(/home/daniel/Documents/dev2/Hangout/img/arizona.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    top: 8em;
-    left: 3em;
-    position: absolute;
-}
-.claudio {
-    background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: absolute;
-    top: 8em;
-    left: 16em;
-}
-.denis {
-    background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: absolute;
-    top: 8em;
-    right: 20em;
-}
-.devops {
-    background-image: url(/home/daniel/Documents/dev2/Hangout/img/devops.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 32em;
-    left: 7em;
-}
-.felipe {
-    background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
-    position: absolute;
-    top: 20em;
-    left: 3m;
-}
-.gui {
-    background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
-    position: absolute;
-    top: 20em;
-    left: 16em;
-}
-.mau {
-    background-image: url(/home/daniel/Documents/dev2/Hangout/img/denis.png);
-    position: absolute;
-    top: 20em;
-    left: 28em;
-}
-.paola{
-    position: absolute;
-    top: 20em;
-    left: 42em;
-}
-.norio{
-    position: absolute;
-    top: 90%;a
-    left: 40%;
-}
-.qa{
-    position: absolute;
-    top: 20%;
-    left: 40%;
-}*//
-li {
-    list-style-type: none;
-}
 li {
     float: left;
     width: 35ch;
@@ -97,8 +5,10 @@ li {
     margin-top: 1em;
     border: 2px solid #C5C8DC;
     margin-right: 1em;
+    font-size: 15px;
+    list-style-type: none;
 }
-li img{
+.avatar{
     float: left;
     margin-right: 1em;
     margin-left: 2px;
@@ -108,4 +18,12 @@ li img{
     float: left;
     font-size: 12px;
     font-style: italic;
+}
+.hangout-button{
+    margin-top: 4px;
+    margin-left: 1em;
+}
+a .hangout-button:active{
+    width: 30px;
+    height: 20px;
 }

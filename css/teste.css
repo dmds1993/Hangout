@@ -1,0 +1,11 @@
+.hangouts{
+    background-position: 0 -615px;
+background-repeat: no-repeat;
+content: '';
+height: 56px;
+left: 0;
+position: absolute;
+top: 2px;
+width: 48px;
+zoom: reset;
+}

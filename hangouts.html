@@ -7,16 +7,13 @@
   <body>
     <html>
 <head>
-  <!-- Material Design Lite -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> <script type="text/javascript" src="js/hangout.js"></script>
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
-  <!-- Material Design icon font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/hangout.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-  <!-- The drawer is always open in large screens. The header is always shown,
-      even in small screens. -->
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
                 mdl-layout--fixed-header">
     <header class="mdl-layout__header">
@@ -36,67 +33,70 @@
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Hangouts</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link desenvolvimento" href="">Hangout equipe de desenvolvimento</a>
-        <a class="mdl-navigation__link coordenador-de-equipe" href="">Hangout coordenador de equipe</a>
-        <a class="mdl-navigation__link devops" href="">Hangout equipe Devops</a>
-        <a class="mdl-navigation__link equipe-qualidade" href="">Hangout equipe de Qualidade</a>
+        <a class="mdl-navigation__link equipe-qualidade" id = "daily" href="">Daily</a>
+        <a class="mdl-navigation__link" id ="desenvolvimento" href="">Desenvolvimento</a>
+        <a class="mdl-navigation__link coordenador-de-equipe" id = "coordenador" href="">Coordenador de equipe</a>
+        <a class="mdl-navigation__link devops" id = "devops">Devops</a>
+        <a class="mdl-navigation__link equipe-qualidade" id = "qualidade" href="">Qualidade e Teste</a>
+        <a class="mdl-navigation__link" id = 'todos' href="">Todos</a>
       </nav>
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
-          <ul class="dev-visto">
-              <li class="daily">Daily
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/daily.png" alt="Foto Daily" width="60" height="80"/>
-                  <a href="http://web.arizona.global/daily" title = "Daily">Hangout</a>
+          <ul class="dev-visto icones-hangout">
+              <li class="visto daily outros">Daily
+                  <img class="avatar" /src="/home/daniel/Documents/dev2/Hangout/img/daily.png" alt="Foto Daily" width="60" height="80"/>
+                  <a href="http://web.arizona.global/daily" title="Hangout Denis" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40"/></a>
               </li>
-              <li class="bruno">Bruno
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/bruno.png" alt="Foto Bruno" width="60" height="80"/>
-                  <a href="http://web.arizona.global/bruno">Hangout</a>
+              <li class="visto bruno coordenador">Bruno
+                  <img class="avatar" src="/home/daniel/Documents/dev2/Hangout/img/bruno.png" alt="Foto Bruno" width="60" height="80"/>
+                  <!-- <img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="Foto Bruno" wid5h="60" heig4t="80"/> -->
+                  <a href="http://web.arizona.global/bruno" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40" /></a>
                   <p class="email">Email: bruno.@arizona.global.com</p>
               </li>
-              <li class="claudio">Claudio
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/claudio.png" alt="Foto Claudio" width="60" height="80"/>
-                  <a href="http://web.arizona.global/claudio" title="Hangout Claudio">Claudio</a>
+              <li class="visto claudio">Claudio
+                  <img class="avatar" src="/home/daniel/Documents/dev2/Hangout/img/claudio.png" alt="Foto Claudio" width="60" height="80"/>
+                  <a href="http://web.arizona.global/claudio" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40" /></a>
                   <p class="email">Email: claudio.@arizona.global.com</p>
               </li>
-              <li class="denis">Denis
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/denis.png" alt="Foto Denis" width="60" height="80"/>
-                  <a href="http://web.arizona.global/denis" title="Hangout Denis">Denis</a>
+              <li class="visto denis dev">Denis
+                  <img class="avatar" src="/home/daniel/Documents/dev2/Hangout/img/denis.png" alt="Foto Denis" width="60" height="80"/>
+                  <a href="http://web.arizona.global/denis" title="Hangout Denis" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40" /></a>
                   <p class="email">Email: denis.@arizona.global.com</p>
               </li>
-              <li class="devops">Devops
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/devops.png" alt="Foto Devops" width="60" height="80"/>
-                  <a href="http://web.arizona.global/devops" title="Hangout Devops">Devops</a>
+              <li class="visto devops dev">Devops
+                  <img class="avatar"  src="/home/daniel/Documents/dev2/Hangout/img/devops.png" alt="Foto Devops" width="60" height="80"/>
+                  <a href="http://web.arizona.global/devops" title="Hangout Devops" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40" /></a>
                   <p class="email">Email: devops.@arizona.global.com</p>
               </li>
-              <li class="felipe">Felipe
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/felipe.png" alt="Foto Felipe" width="60" height="80"/>
-                  <a href="http://web.arizona.global/felipe" title="Hangout Felipe">Felipe</a>
+              <li class="visto felipe dev">Felipe
+                  <img class="avatar" src="/home/daniel/Documents/dev2/Hangout/img/felipe.jpg" alt="Foto Felipe" width="60" height="80"/>
+                  <a href="http://web.arizona.global/felipe" title="Hangout Felipe" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40" /></a>
                   <p class="email">Email: felipe.@arizona.global.com</p>
               </li>
-              <li class="gui">Gui
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/gui.png" alt="Foto Guilherme" width="60" height="80"/>
-                  <a href="http://web.arizona.global/gui" title="Hangout Gui">Gui</a>
+              <li class="visto gui dev">Gui
+                  <img class="avatar" src="/home/daniel/Documents/dev2/Hangout/img/gui.jpg" alt="Foto Guilherme" width="60" height="80"/>
+                  <a href="http://web.arizona.global/gui" title="Hangout Guilherme" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40" /></a>
                   <p class="email">Email: gui.@arizona.global.com</p>
               </li>
-              <li class="mau">Mau
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/mau.png" alt="Foto Mauricio" width="60" height="80"/>
-                  <a href="http://web.arizona.global/mau" title="Hangout Mau">Hangout</a>
+              <li class="visto mau dev">Mau
+                  <img class="avatar" src="/home/daniel/Documents/dev2/Hangout/img/mau.png" alt="Foto Mauricio" width="60" height="80"/>
+                  <a href="http://web.arizona.global/mau" title="Hangout Mauricio" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40" /></a>
                   <p class="email">Email: mau.@arizona.global.com</p>
               </li>
-              <li class="norio">Norio
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/norio.png" alt="Foto Norio" width="60" height="80"/>
-                  <a href="http://web.arizona.global/norio" title="Hangout Norio">Norio</a>
+              <li class="visto norio dev">Norio
+                  <img class="avatar" src="/home/daniel/Documents/dev2/Hangout/img/norio.png" alt="Foto Norio" width="60" height="80"/>
+                  <a href="http://web.arizona.global/norio" title="Hangout Mauricio" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40" /></a>
                   <p class="email">Email: norio.@arizona.global.com</p>
               </li>
-              <li class="paola">Paola
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/paola.png" alt="Foto Paola" width="60" height="80"/>
-                  <a href="http://web.arizona.global/pow" title="Hangout Paola">Pow</a>
+              <li class="visto paola dev processo">Paola
+                  <img class="avatar" src="/home/daniel/Documents/dev2/Hangout/img/paola.png" alt="Foto Paola" width="60" height="80"/>
+                   <a href="http://web.arizona.global/mau" title="Hangout Paola" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40" /></a>
                   <p class="email">Email: paola.@arizona.global.com</p>
               </li>
-              <li class="qa">QA
-                  <img src="/home/daniel/Documents/dev2/Hangout/img/qa.png" alt="Foto QA" width="60" height="80"/>
-                  <a href="http://web.arizona.global/qa" title="Hangout QA">QA</a>
+              <li class="visto qa outros">QA
+                  <img class="avatar" src="/home/daniel/Documents/dev2/Hangout/img/qa.png" alt="Foto QA" width="60" height="80"/>
+                  <a href="http://web.arizona.global/qa" title="Hangout QA" class="hangout"><img class = "hangout-button"src="/home/daniel/Documents/dev2/Hangout/img/hangout.jpg" alt="hangout"width="50" height="40" /></a>
                   <p class="email">Email: qa.@arizona.global.com</p>
               </li>
           </ul>
